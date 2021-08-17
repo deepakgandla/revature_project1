@@ -82,3 +82,56 @@
 [main] 2021-08-17 09:30:40 INFO  com.app.Main  - 4)My Profile
 [main] 2021-08-17 09:30:40 INFO  com.app.Main  - 5)Exit
 [main] 2021-08-17 09:30:40 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-17 09:56:45 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-17 09:56:45 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:56:45 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:56:45 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:56:49 INFO  com.app.Main  - Register Account page
+[main] 2021-08-17 09:56:49 INFO  com.app.Main  - Enter First Name
+[main] 2021-08-17 09:57:15 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-17 09:57:15 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:57:15 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:57:15 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:57:17 INFO  com.app.Main  - Register Account page
+[main] 2021-08-17 09:57:17 INFO  com.app.Main  - Enter First Name
+[main] 2021-08-17 09:57:19 INFO  com.app.Main  - Enter Last Name
+[main] 2021-08-17 09:57:21 INFO  com.app.Main  - Enter Email
+[main] 2021-08-17 09:57:28 INFO  com.app.Main  - Enter Password
+[main] 2021-08-17 09:57:35 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-17 09:57:35 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:57:35 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:57:35 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:57:40 INFO  com.app.Main  - Register Account page
+[main] 2021-08-17 09:57:40 INFO  com.app.Main  - Enter First Name
+[main] 2021-08-17 09:57:43 INFO  com.app.Main  - Enter Last Name
+[main] 2021-08-17 09:57:47 INFO  com.app.Main  - Enter Email
+[main] 2021-08-17 09:57:51 INFO  com.app.Main  - Enter Password
+[main] 2021-08-17 09:57:57 ERROR com.app.Main  - Something went wrogn contact admin
+[main] 2021-08-17 09:57:57 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:57:57 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:57:57 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:58:34 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-17 09:58:34 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:58:34 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:58:34 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:58:37 INFO  com.app.Main  - Register Account page
+[main] 2021-08-17 09:58:37 INFO  com.app.Main  - Enter First Name
+[main] 2021-08-17 09:58:39 INFO  com.app.Main  - Enter Last Name
+[main] 2021-08-17 09:58:41 INFO  com.app.Main  - Enter Email
+[main] 2021-08-17 09:58:49 INFO  com.app.Main  - Enter Password
+[main] 2021-08-17 09:58:55 ERROR com.app.Main  - Something went wrong contact admin
+[main] 2021-08-17 09:58:55 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:58:55 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:58:55 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:59:20 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-17 09:59:20 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:59:20 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:59:20 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:59:25 INFO  com.app.Main  - Register Account page
+[main] 2021-08-17 09:59:25 INFO  com.app.Main  - Enter First Name
+[main] 2021-08-17 09:59:27 INFO  com.app.Main  - Enter Last Name
+[main] 2021-08-17 09:59:30 INFO  com.app.Main  - Enter Email
+[main] 2021-08-17 09:59:35 INFO  com.app.Main  - Enter Password
+[main] 2021-08-17 09:59:42 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:59:42 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:59:42 INFO  com.app.Main  - 3)Close

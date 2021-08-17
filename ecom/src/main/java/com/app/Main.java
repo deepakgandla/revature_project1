@@ -7,6 +7,8 @@ import org.apache.log4j.Logger;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.Employee;
+import com.app.service.create.CustomerCreateService;
+import com.app.service.create.impl.CustomerCreateServiceImpl;
 import com.app.service.login.CustomerLoginService;
 import com.app.service.login.EmployeeLoginService;
 import com.app.service.login.impl.CustomerServiceLoginImpl;
@@ -127,6 +129,21 @@ public class Main {
 				String customerRegisterEmail = scanner.nextLine();
 				log.info("Enter Password");
 				String customerRegisterPassword = scanner.nextLine();
+				Customer customer = new Customer(customerRegisterFirstName,customerRegisterLastName,customerRegisterEmail,customerRegisterPassword);
+				
+				//code to service
+				int c = 0;
+				CustomerCreateService customerCreateService = new CustomerCreateServiceImpl();
+				try {
+					c = customerCreateService.createCustomer(customer);
+				} catch (BusinessException e) {
+					// TODO Auto-generated catch block
+					log.error(e.getMessage());
+				}
+				if(c==1) {
+					log.info("accont created");
+				}
+				
 				break;
 			}
 		}while(entryChoice!=3);
