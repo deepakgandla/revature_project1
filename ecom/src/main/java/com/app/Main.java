@@ -48,8 +48,41 @@ public class Main {
 							try {
 								customer = customerLoginService.customerLogin(customerEmail, customerPassword);
 								if(customer.getFirst_name()!=null) {
-									log.info("Login Successfull");
-									log.info("Welcome user " + customer.getFirst_name());
+									int customerChoice =0;
+									log.info("================================");
+									log.info("Login Successfull             ||");
+									log.info("Welcome user " + customer.getFirst_name() + "           ||");
+									log.info("================================");
+									do {
+										log.info("1)Shop");
+										log.info("2)My Orders");
+										log.info("3)My Cart");
+										log.info("4)My Profile");
+										log.info("5)Exit");
+										log.info("Enter your choice (1-5)");
+										try {
+											customerChoice = Integer.parseInt(scanner.nextLine());
+											}catch(NumberFormatException e) {}
+										switch(customerChoice) {
+										case 1:
+											log.info("Under Construction");
+											break;
+										case 2:
+											log.info("Under Construction");
+											break;
+										case 3:
+											log.info("Under Construction");
+											break;
+										case 4:
+											log.info("Profile");
+											log.info("=====================================================");
+											log.info("ID:    " +customer.getId());
+											log.info("Name    :" + customer.getFirst_name() + " " + customer.getLast_name());
+											log.info("Email    :" + customer.getEmail());
+											log.info("======================================================");
+											break;
+										}
+									}while(customerChoice!=5);
 								}else {
 									log.info("Email and password didn't match");
 								}
@@ -85,6 +118,15 @@ public class Main {
 				}while(userType!=3);
 				break;
 			case 2:
+				log.info("Register Account page");
+				log.info("Enter First Name");
+				String customerRegisterFirstName = scanner.nextLine();
+				log.info("Enter Last Name");
+				String customerRegisterLastName = scanner.nextLine();
+				log.info("Enter Email");
+				String customerRegisterEmail = scanner.nextLine();
+				log.info("Enter Password");
+				String customerRegisterPassword = scanner.nextLine();
 				break;
 			}
 		}while(entryChoice!=3);

@@ -1,214 +1,84 @@
-[main] 2021-08-15 22:36:18 INFO  com.app.Main  - Check
-[main] 2021-08-15 22:37:01 INFO  com.app.Main  - Check
-[main] 2021-08-16 00:15:26 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 00:15:26 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 00:15:26 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 00:15:26 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 00:15:46 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 00:15:46 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 00:15:46 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 00:15:47 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 00:15:47 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 00:16:00 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 00:16:06 ERROR com.app.dao.login.impl.CustomerLoginDAOImpl  - java.sql.SQLSyntaxErrorException: Table 'jdbc_demo.customer' doesn't exist
-[main] 2021-08-16 00:16:06 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 00:16:06 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 00:16:06 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 00:16:41 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 00:16:41 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 00:16:41 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 00:16:41 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 00:16:52 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 00:16:52 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 00:16:52 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 00:16:54 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 00:16:54 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 00:17:05 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 00:17:10 INFO  com.app.Main  - Login Successfull
-[main] 2021-08-16 00:17:10 INFO  com.app.Main  - Welcome user deepak
-[main] 2021-08-16 00:17:10 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 00:17:10 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 00:17:10 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 00:22:03 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 00:22:03 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 00:22:03 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 00:22:03 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 00:22:09 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 00:22:09 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 00:22:09 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 00:22:12 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 00:22:12 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 00:22:15 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 00:22:18 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 00:22:18 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 00:22:18 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:47:16 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 09:47:16 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 09:47:16 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 09:47:16 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 09:47:23 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:47:23 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:47:23 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:47:23 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 09:47:23 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 09:47:35 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 09:47:41 INFO  com.app.Main  - Login Successfull
-[main] 2021-08-16 09:47:41 INFO  com.app.Main  - Welcome user null
-[main] 2021-08-16 09:47:41 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:47:41 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:47:41 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:49:37 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 09:49:37 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 09:49:37 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 09:49:37 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 09:49:40 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:49:40 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:49:40 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:49:40 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 09:49:40 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 09:49:52 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 09:49:57 INFO  com.app.Main  - Login Successfull
-[main] 2021-08-16 09:49:57 INFO  com.app.Main  - Welcome user null
-[main] 2021-08-16 09:49:57 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:49:57 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:49:57 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:53:22 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 09:53:22 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 09:53:22 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 09:53:22 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 09:53:24 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:53:24 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:53:24 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:53:25 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 09:53:25 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 09:53:33 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 09:53:37 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:53:37 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:53:37 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:58:56 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 09:58:56 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 09:58:56 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 09:58:56 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 09:59:00 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:59:00 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:59:00 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 09:59:01 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 09:59:01 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 09:59:08 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 09:59:12 INFO  com.app.Main  - Customer [id=0, first_name=null, last_name=null, email=null, password=null]
-[main] 2021-08-16 09:59:12 INFO  com.app.Main  - Login Successfull
-[main] 2021-08-16 09:59:12 INFO  com.app.Main  - Welcome user null
-[main] 2021-08-16 09:59:12 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 09:59:12 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 09:59:12 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 10:05:53 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 10:05:53 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 10:05:53 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 10:05:53 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 10:05:56 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 10:05:56 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 10:05:56 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 10:05:56 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 10:05:56 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 10:06:06 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 10:06:11 INFO  com.app.Main  - Email and password didn't match
-[main] 2021-08-16 10:06:11 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 10:06:11 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 10:06:11 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 10:56:43 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 10:56:43 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 10:56:43 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 10:56:43 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 10:56:50 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 10:56:50 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 10:56:50 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 10:56:50 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 11:04:48 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 11:04:48 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 11:04:48 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 11:04:48 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 11:04:50 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:04:50 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:04:50 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:04:51 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 11:04:51 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 11:05:01 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 11:05:09 INFO  com.app.Main  - Login Successfull
-[main] 2021-08-16 11:05:09 INFO  com.app.Main  - Welcome user virat
-[main] 2021-08-16 11:05:09 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:05:09 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:05:09 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:07:41 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 11:07:41 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 11:07:51 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 11:07:55 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:07:55 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:07:55 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:10:00 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 11:10:00 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 11:10:00 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 11:10:00 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 11:10:05 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:10:05 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:10:05 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:10:05 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 11:10:05 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 11:10:12 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 11:10:15 INFO  com.app.Main  - Email and password didn't match
-[main] 2021-08-16 11:10:15 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:10:15 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:10:15 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:10:18 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 11:10:18 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 11:10:20 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 11:10:22 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:10:22 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:10:22 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:14:43 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 11:14:43 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 11:14:43 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 11:14:43 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 11:14:45 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:14:45 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:14:45 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:14:46 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 11:14:46 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 11:14:53 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 11:14:59 INFO  com.app.Main  - Email and password didn't match
-[main] 2021-08-16 11:14:59 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:14:59 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:14:59 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:15:03 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 11:15:03 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 11:15:07 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 11:15:11 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:15:11 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:15:11 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:16:52 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 11:16:52 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 11:16:52 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 11:16:52 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 11:16:57 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:16:57 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:16:57 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 11:16:57 INFO  com.app.Main  - welcome to login page
-[main] 2021-08-16 11:16:57 INFO  com.app.Main  - Enter email id
-[main] 2021-08-16 11:16:59 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 11:17:01 ERROR com.app.Main  - Invalid email id
-[main] 2021-08-16 11:17:01 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 11:17:01 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 11:17:01 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 12:25:11 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
-[main] 2021-08-16 12:25:11 INFO  com.app.Main  - 1)Login
-[main] 2021-08-16 12:25:11 INFO  com.app.Main  - 2)Don't have an account signup
-[main] 2021-08-16 12:25:11 INFO  com.app.Main  - 3)Close
-[main] 2021-08-16 12:25:18 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 12:25:18 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 12:25:18 INFO  com.app.Main  - 3)Main
-[main] 2021-08-16 12:25:19 INFO  com.app.Main  - Welcome to employee login page
-[main] 2021-08-16 12:25:19 INFO  com.app.Main  - Enter Email
-[main] 2021-08-16 12:25:26 INFO  com.app.Main  - Enter Password
-[main] 2021-08-16 12:25:41 INFO  com.app.Main  - Welcome Admin deepak
-[main] 2021-08-16 12:25:41 INFO  com.app.Main  - 1)Customer
-[main] 2021-08-16 12:25:41 INFO  com.app.Main  - 2)Employee
-[main] 2021-08-16 12:25:41 INFO  com.app.Main  - 3)Main
+[main] 2021-08-16 17:01:02 INFO  com.app.Main  - 1)Login
+[main] 2021-08-16 17:01:02 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-16 17:01:02 INFO  com.app.Main  - 3)Close
+[main] 2021-08-16 17:01:17 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-16 17:01:17 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-16 17:01:17 INFO  com.app.Main  - 3)Main
+[main] 2021-08-16 17:01:18 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-16 17:01:18 INFO  com.app.Main  - Enter email id
+[main] 2021-08-16 17:01:31 INFO  com.app.Main  - Enter Password
+[main] 2021-08-16 17:01:35 INFO  com.app.Main  - Email and password didn't match
+[main] 2021-08-16 17:01:35 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-16 17:01:35 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-16 17:01:35 INFO  com.app.Main  - 3)Main
+[main] 2021-08-16 17:01:36 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-16 17:01:36 INFO  com.app.Main  - Enter email id
+[main] 2021-08-16 17:01:45 INFO  com.app.Main  - Enter Password
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - ================================
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - Welcome user deepak           ||
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - ================================
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - 4)My Profile
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - 5)Exit
+[main] 2021-08-16 17:01:47 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - Profile
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - =====================================================
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - ID:    1
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - Name    :deepak gandla
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - Email    :deepakgandla1@gmail.com
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - ======================================================
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - 4)My Profile
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - 5)Exit
+[main] 2021-08-16 17:01:54 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-17 09:29:00 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-17 09:29:00 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:29:00 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:29:00 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:29:04 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-17 09:29:04 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-17 09:29:04 INFO  com.app.Main  - 3)Main
+[main] 2021-08-17 09:29:08 INFO  com.app.Main  - Welcome to employee login page
+[main] 2021-08-17 09:29:08 INFO  com.app.Main  - Enter Email
+[main] 2021-08-17 09:29:16 INFO  com.app.Main  - Enter Password
+[main] 2021-08-17 09:29:20 INFO  com.app.Main  - Email and password didn't match
+[main] 2021-08-17 09:29:20 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-17 09:29:20 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-17 09:29:20 INFO  com.app.Main  - 3)Main
+[main] 2021-08-17 09:30:14 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-17 09:30:14 INFO  com.app.Main  - 1)Login
+[main] 2021-08-17 09:30:14 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-17 09:30:14 INFO  com.app.Main  - 3)Close
+[main] 2021-08-17 09:30:19 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-17 09:30:19 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-17 09:30:19 INFO  com.app.Main  - 3)Main
+[main] 2021-08-17 09:30:20 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-17 09:30:20 INFO  com.app.Main  - Enter email id
+[main] 2021-08-17 09:30:29 INFO  com.app.Main  - Enter Password
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - ================================
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - Welcome user deepak           ||
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - ================================
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - 4)My Profile
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - 5)Exit
+[main] 2021-08-17 09:30:36 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - Profile
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - =====================================================
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - ID:    1
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - Name    :deepak gandla
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - Email    :deepakgandla1@gmail.com
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - ======================================================
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - 4)My Profile
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - 5)Exit
+[main] 2021-08-17 09:30:40 INFO  com.app.Main  - Enter your choice (1-5)
