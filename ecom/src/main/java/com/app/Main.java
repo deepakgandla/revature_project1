@@ -10,15 +10,19 @@ import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.Employee;
 import com.app.model.Product;
+import com.app.service.create.CreateCartService;
 import com.app.service.create.CustomerCreateService;
 import com.app.service.create.ProductCreateService;
+import com.app.service.create.impl.CreateCartServiceImpl;
 import com.app.service.create.impl.CustomerCreateServiceImpl;
 import com.app.service.create.impl.ProductCreateServiceImpl;
 import com.app.service.login.CustomerLoginService;
 import com.app.service.login.EmployeeLoginService;
 import com.app.service.login.impl.CustomerServiceLoginImpl;
 import com.app.service.login.impl.EmployeeLoginServiceImpl;
+import com.app.service.search.CartItemSearchService;
 import com.app.service.search.ProductSearchService;
+import com.app.service.search.impl.CartItemSearchServiceImpl;
 import com.app.service.search.impl.ProductSearchServiceImpl;
 
 public class Main {
@@ -82,7 +86,24 @@ public class Main {
 											log.info("Under Construction");
 											break;
 										case 3:
-											log.info("Under Construction");
+											log.info("CART");
+											log.info("============================");
+											log.info("||Name                Price||");
+											CartItemSearchService cartItemSearchService = new CartItemSearchServiceImpl();
+											List<Product> cartItems = cartItemSearchService.cartItemSearhService(customer);
+											float totalCartValue = 0;
+											if(cartItems.size()>=1) {
+												for(Product product: cartItems) {
+													totalCartValue += product.getPrice();
+													log.info("|| "+product.getName()+"                 " +product.getPrice()+" ||");
+												}
+
+												log.info("============================");
+												log.info("                  total: " + totalCartValue);
+											}else {
+												log.info("Your cart is empty");
+											}
+			
 											break;
 										case 4:
 											log.info("Enter Product Name");
@@ -97,7 +118,7 @@ public class Main {
 												}
 												int addtoCart = 0;
 												do {
-													log.info("2)Back");
+													log.info("0)Back");
 													log.info("1)Add to Cart");
 													try {
 														addtoCart = Integer.parseInt(scanner.nextLine());
@@ -113,8 +134,21 @@ public class Main {
 															log.info(index + ") " + product);
 														}
 														int addToCartPoductId = Integer.parseInt(scanner.nextLine());
-														//code to service
-														log.info("not implemented");
+														
+														index = 1;
+													    CreateCartService createCartService = new CreateCartServiceImpl();
+													    int c = 0;
+														for(Product product: products) {
+															if(index == addToCartPoductId);{
+															c = createCartService.createCart(product, customer);
+															break;
+															}
+														}
+													    if(c==1) {
+													    	log.info("Product added to Cart");
+													    }else {
+													    	throw new BusinessException("Something went wrong");
+													    }
 														break;
 													}
 												}while(addtoCart!=0);
@@ -127,8 +161,8 @@ public class Main {
 											log.info("Profile");
 											log.info("=====================================================");
 											log.info("ID:    " +customer.getId());
-											log.info("Name    :" + customer.getFirst_name() + " " + customer.getLast_name());
-											log.info("Email    :" + customer.getEmail());
+											log.info("Name:    " + customer.getFirst_name() + " " + customer.getLast_name());
+											log.info("Email:    " + customer.getEmail());
 											log.info("======================================================");
 											break;
 										}
