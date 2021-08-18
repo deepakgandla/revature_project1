@@ -16,11 +16,12 @@ public class CartItemSearchServiceImpl implements CartItemSearchService {
 	public List<Product> cartItemSearhService(Customer customer) throws BusinessException {
 		// TODO Auto-generated method stub
 		List<Product> products = new ArrayList<>();
-		if(customer.getId()>1 && customer.getId()<100) {
+		if(customer.getId()>0 && customer.getId()<100) {
 			//code to dao
 			CartItemSearchDAO cartItemSearchDAO = new CartItemSearchDAOImpl();
 			products = cartItemSearchDAO.cartItemSearhService(customer);
 		}else {
+			
 			throw new BusinessException("Invalid Request");
 		}
 		return products;

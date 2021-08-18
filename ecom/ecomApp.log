@@ -929,3 +929,389 @@
 [main] 2021-08-18 12:53:53 INFO  com.app.Main  - 5)My Profile
 [main] 2021-08-18 12:53:53 INFO  com.app.Main  - 6)Exit
 [main] 2021-08-18 12:53:53 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 12:55:47 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 12:55:47 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 12:55:47 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 12:55:47 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 12:55:52 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 12:55:52 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 12:55:52 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 12:55:52 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 12:55:52 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 12:56:00 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - ================================
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - ================================
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - 6)Exit
+[main] 2021-08-18 12:56:04 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - Your cart is empty
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - 6)Exit
+[main] 2021-08-18 12:56:07 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 13:48:12 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 13:48:12 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 13:48:12 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 13:48:12 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 13:48:16 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 13:48:16 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 13:48:16 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 13:48:17 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 13:48:17 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 13:48:29 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - ================================
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - Welcome user deepak           ||
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - ================================
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 13:48:35 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 13:48:39 ERROR com.app.Main  - Invalid Request
+[main] 2021-08-18 13:48:39 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 13:48:39 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 13:48:39 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 13:50:02 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 13:50:02 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 13:50:02 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 13:50:02 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 13:50:05 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 13:50:05 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 13:50:05 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 13:50:06 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 13:50:06 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 13:50:14 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - ================================
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - Welcome user deepak           ||
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - ================================
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 13:50:18 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  - CART
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  - ============================
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  - ||Name                Price||
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  - || bat                 25.0 ||
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  - ============================
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  -                   total: 25.0
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  - 1)Make Order
+[main] 2021-08-18 13:50:23 INFO  com.app.Main  - 2)Go back
+[main] 2021-08-18 13:50:26 INFO  com.app.Main  - Order Items
+[main] 2021-08-18 13:50:26 INFO  com.app.Main  - Number of Items Order: 1
+[main] 2021-08-18 13:50:26 INFO  com.app.Main  - 1)Make Order
+[main] 2021-08-18 13:50:26 INFO  com.app.Main  - 2)Go back
+[main] 2021-08-18 14:18:46 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:18:46 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:18:46 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:18:46 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:18:51 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:18:51 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:18:51 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:18:51 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:18:51 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:18:59 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:19:03 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - com.app.model.Order@3b2cf7ab
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - com.app.model.Order@2aa5fe93
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:19:06 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:19:36 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:19:36 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:19:36 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:19:36 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:19:45 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:19:45 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:19:45 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:19:45 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:19:45 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:19:54 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:19:58 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - Order [id=0, customer=Customer [id=4, first_name=praneeth, last_name=resu, email=praneeth@gmail.com, password=praneeth12], product=Product [id=0, name=ball, category=null, price=0.0], status=Ordered]
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - Order [id=0, customer=Customer [id=4, first_name=praneeth, last_name=resu, email=praneeth@gmail.com, password=praneeth12], product=Product [id=0, name=bat, category=null, price=0.0], status=Ordered]
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:19:59 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:21:29 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:21:29 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:21:29 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:21:29 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:21:35 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:21:35 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:21:35 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:21:35 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:21:35 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:21:43 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:21:48 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - Item                   Status
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - ball           Ordered
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - Item                   Status
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - bat           Ordered
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:21:51 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:22:21 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:22:21 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:22:21 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:22:21 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:22:26 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:22:26 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:22:26 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:22:26 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:22:26 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:22:35 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:22:39 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - Item                   Status
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - ball           Ordered
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - bat           Ordered
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:22:42 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:23:55 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:23:55 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:23:55 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:23:55 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:24:00 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:24:00 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:24:00 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:24:01 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:24:01 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:24:08 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:24:12 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - OrderID                 Item                   Status
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - #0             ball               Ordered
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - #0             bat               Ordered
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:24:14 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:26:13 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:26:13 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:26:13 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:26:13 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:26:20 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:26:20 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:26:20 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:26:20 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:26:20 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:26:25 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:26:29 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - OrderID                 Item                   Status
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - #1             ball               Ordered
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - #2             bat               Ordered
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:26:31 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:29:14 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:29:14 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:29:14 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:29:14 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:29:21 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:29:21 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:29:21 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:29:22 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:29:22 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:29:29 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:29:35 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - OrderID                 Item                   Status
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - #1                   ball                     Ordered
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - #2                   bat                     Ordered
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:29:39 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:31:52 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:31:52 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:31:52 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:31:52 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:32:49 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:32:49 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:32:49 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:32:49 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:32:56 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:32:56 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:32:56 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:32:56 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:32:56 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:33:03 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:33:08 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - =======================================================
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - OrderID                 Item                   Status
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - ========================================================
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - #1                     ball                       Ordered
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - #2                     bat                       Ordered
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:33:11 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:34:08 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 14:34:08 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 14:34:08 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 14:34:08 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 14:34:15 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 14:34:15 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 14:34:15 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 14:34:16 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 14:34:16 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 14:34:20 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - ================================
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:34:24 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - Orders
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - =======================================================
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - ||OrderID                 Item                   Status||
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - =======================================================
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - #1                     ball                       Ordered
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - #2                     bat                       Ordered
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - =========================================================
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 14:34:26 INFO  com.app.Main  - Enter your choice (1-5)

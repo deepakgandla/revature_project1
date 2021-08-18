@@ -6,9 +6,11 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
+import com.app.dao.search.OrderItemSearchDAO;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.Employee;
+import com.app.model.Order;
 import com.app.model.Product;
 import com.app.service.create.CreateCartService;
 import com.app.service.create.CustomerCreateService;
@@ -23,8 +25,10 @@ import com.app.service.login.EmployeeLoginService;
 import com.app.service.login.impl.CustomerServiceLoginImpl;
 import com.app.service.login.impl.EmployeeLoginServiceImpl;
 import com.app.service.search.CartItemSearchService;
+import com.app.service.search.OrderItemSearchService;
 import com.app.service.search.ProductSearchService;
 import com.app.service.search.impl.CartItemSearchServiceImpl;
+import com.app.service.search.impl.OrderItemSearchServiceImpl;
 import com.app.service.search.impl.ProductSearchServiceImpl;
 
 public class Main {
@@ -74,7 +78,7 @@ public class Main {
 										log.info("3)My Cart");
 										log.info("4)Search Products");
 										log.info("5)My Profile");
-										log.info("6)Exit");
+										log.info("6)Logout");
 										log.info("Enter your choice (1-5)");
 										try {
 											customerChoice = Integer.parseInt(scanner.nextLine());
@@ -85,7 +89,23 @@ public class Main {
 											//code to service
 											break;
 										case 2:
-											log.info("Under Construction");
+											
+											List<Order> orderedItems = new ArrayList<>();
+											OrderItemSearchService orderItemSearchService = new OrderItemSearchServiceImpl();
+											orderedItems = orderItemSearchService.orderItemSeach(customer);
+											if(orderedItems.size()>0) {
+												log.info("Orders");
+												log.info("=======================================================");
+												log.info("||OrderID                 Item                   Status||");
+												log.info("=======================================================");
+												for(Order order: orderedItems) {
+								
+													log.info("#"+order.getId()+"                     "+order.getProduct().getName()+"                       "+order.getStatus());
+												}
+												log.info("=========================================================");
+											}else {
+												log.info("You don't have any orders");
+											}
 											break;
 										case 3:
 											CartItemSearchService cartItemSearchService = new CartItemSearchServiceImpl();
