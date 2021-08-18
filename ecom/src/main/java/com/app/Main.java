@@ -85,8 +85,22 @@ public class Main {
 											}catch(NumberFormatException e) {}
 										switch(customerChoice) {
 										case 1:
-											log.info("Products");
-											//code to service
+											log.info("Availabe Products"); 
+											log.info("=====================================================");
+										    log.info("id             Name            Category       price");
+										    log.info("=======================================================");
+										    ProductSearchService productSearchService = new ProductSearchServiceImpl();
+										    List<Product> availableProducts = new ArrayList<>();
+										    availableProducts = productSearchService.searchProduct();
+										    if(availableProducts.size()>0) {
+										    	for(Product product: availableProducts) {
+										    		log.info(product.getId() + "            " + product.getName()+"         "+product.getCategory()+"         "+product.getPrice());
+
+										    	}
+										    	log.info("======================================================");
+										    }else {
+										    	throw new BusinessException("oops something went wrong");
+										    }
 											break;
 										case 2:
 											
@@ -147,7 +161,7 @@ public class Main {
 										case 4:
 											log.info("Enter Product Name");
 											String producName = scanner.nextLine();
-											ProductSearchService productSearchService = new ProductSearchServiceImpl();
+											productSearchService = new ProductSearchServiceImpl();
 											List<Product> products = new ArrayList<Product>();
 											products =productSearchService.searchProduct(producName);
 											if(products.size()>0) {
@@ -172,8 +186,10 @@ public class Main {
 														for(Product product: products) {
 															log.info(index + ") " + product);
 														}
-														int addToCartPoductId = Integer.parseInt(scanner.nextLine());
-														
+														int addToCartPoductId =0;
+														try {
+														addToCartPoductId = Integer.parseInt(scanner.nextLine());
+														}catch(NumberFormatException e) {}
 														index = 1;
 													    CreateCartService createCartService = new CreateCartServiceImpl();
 													    int c = 0;

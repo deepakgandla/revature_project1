@@ -25,4 +25,14 @@ public class ProductSearchServiceImpl implements ProductSearchService {
 		return products;
 	}
 
+	@Override
+	public List<Product> searchProduct() throws BusinessException {
+		// TODO Auto-generated method stub
+		List<Product> products = new ArrayList<>();
+		//code to dao
+		ProductSearchDAO productSearchDAO = new ProductSearchDAOImpl();
+		products = productSearchDAO.searchProduct();
+		return products;
+	}
+
 }

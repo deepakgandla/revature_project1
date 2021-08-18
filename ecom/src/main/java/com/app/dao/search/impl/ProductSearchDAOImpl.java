@@ -34,8 +34,27 @@ public class ProductSearchDAOImpl implements ProductSearchDAO {
 		}
 		return products;
 	}
-
-
+   
+	@Override
+	public List<Product> searchProduct() throws BusinessException{
+		List<Product> products = new ArrayList<>();
+		try(Connection connection = MySqlConnection.getConnection()){
+			String sql = "select * from product";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			ResultSet result = preparedStatement.executeQuery();
+			while(result.next()) {
+				Product product = new Product(result.getString("name"), result.getString("category"), result.getShort("price"));
+				product.setId(result.getInt("id"));
+				products.add(product);
+				
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return products;
+		
+	}
 	
 	
 }

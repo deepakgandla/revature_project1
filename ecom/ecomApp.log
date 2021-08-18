@@ -1315,3 +1315,32 @@
 [main] 2021-08-18 14:34:26 INFO  com.app.Main  - 5)My Profile
 [main] 2021-08-18 14:34:26 INFO  com.app.Main  - 6)Logout
 [main] 2021-08-18 14:34:26 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 16:31:31 INFO  com.app.Main  - Welcome to Deepak's shopping command line app
+[main] 2021-08-18 16:31:31 INFO  com.app.Main  - 1)Login
+[main] 2021-08-18 16:31:31 INFO  com.app.Main  - 2)Don't have an account signup
+[main] 2021-08-18 16:31:31 INFO  com.app.Main  - 3)Close
+[main] 2021-08-18 16:31:41 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 16:31:41 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 16:31:41 INFO  com.app.Main  - 3)Main
+[main] 2021-08-18 16:31:42 INFO  com.app.Main  - welcome to login page
+[main] 2021-08-18 16:31:42 INFO  com.app.Main  - Enter email id
+[main] 2021-08-18 16:31:49 INFO  com.app.Main  - Enter Password
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - ================================
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - Login Successfull             ||
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - Welcome user praneeth           ||
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - ================================
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - 1)Shop
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - 2)My Orders
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - 3)My Cart
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - 4)Search Products
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - 5)My Profile
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - 6)Logout
+[main] 2021-08-18 16:31:54 INFO  com.app.Main  - Enter your choice (1-5)
+[main] 2021-08-18 16:31:57 INFO  com.app.Main  - Availabe Products
+[main] 2021-08-18 16:31:57 INFO  com.app.Main  - =====================================================
+[main] 2021-08-18 16:31:57 INFO  com.app.Main  - id             Name            Category       price
+[main] 2021-08-18 16:31:57 INFO  com.app.Main  - =======================================================
+[main] 2021-08-18 16:31:58 ERROR com.app.Main  - oops something went wrong
+[main] 2021-08-18 16:31:58 INFO  com.app.Main  - 1)Customer
+[main] 2021-08-18 16:31:58 INFO  com.app.Main  - 2)Employee
+[main] 2021-08-18 16:31:58 INFO  com.app.Main  - 3)Main
