@@ -12,9 +12,11 @@ import com.app.model.Employee;
 import com.app.model.Product;
 import com.app.service.create.CreateCartService;
 import com.app.service.create.CustomerCreateService;
+import com.app.service.create.OrderCreateService;
 import com.app.service.create.ProductCreateService;
 import com.app.service.create.impl.CreateCartServiceImpl;
 import com.app.service.create.impl.CustomerCreateServiceImpl;
+import com.app.service.create.impl.OrderCreateServiceImpl;
 import com.app.service.create.impl.ProductCreateServiceImpl;
 import com.app.service.login.CustomerLoginService;
 import com.app.service.login.EmployeeLoginService;
@@ -86,13 +88,13 @@ public class Main {
 											log.info("Under Construction");
 											break;
 										case 3:
-											log.info("CART");
-											log.info("============================");
-											log.info("||Name                Price||");
 											CartItemSearchService cartItemSearchService = new CartItemSearchServiceImpl();
 											List<Product> cartItems = cartItemSearchService.cartItemSearhService(customer);
 											float totalCartValue = 0;
 											if(cartItems.size()>=1) {
+												log.info("CART");
+												log.info("============================");
+												log.info("||Name                Price||");
 												for(Product product: cartItems) {
 													totalCartValue += product.getPrice();
 													log.info("|| "+product.getName()+"                 " +product.getPrice()+" ||");
@@ -100,6 +102,23 @@ public class Main {
 
 												log.info("============================");
 												log.info("                  total: " + totalCartValue);
+												int buyCartItems = 0;
+												do {
+													log.info("1)Make Order");
+													log.info("2)Go back");
+													try {
+														buyCartItems = Integer.parseInt(scanner.nextLine());
+													}catch(NumberFormatException e) {}
+													switch(buyCartItems) {
+													case 1:
+														log.info("Order Items");
+														//Code to Service
+														OrderCreateService orderCreateService = new OrderCreateServiceImpl();
+														int numberOfItemsAddedToCart = orderCreateService.createOrder(customer);
+														log.info("Number of Items Order: " + numberOfItemsAddedToCart);
+														break;
+													}
+												}while(buyCartItems!=2);
 											}else {
 												log.info("Your cart is empty");
 											}
@@ -251,20 +270,19 @@ public class Main {
 				String customerRegisterPassword = scanner.nextLine();
 				Customer customer = new Customer(customerRegisterFirstName,customerRegisterLastName,customerRegisterEmail,customerRegisterPassword);
 				
-				//code to service
+				//code to service  
 				int c = 0;
 				CustomerCreateService customerCreateService = new CustomerCreateServiceImpl();
 				try {
 					c = customerCreateService.createCustomer(customer);
-				} catch (BusinessException e) {
-					// TODO Auto-generated catch block
+				} catch (BusinessException e) {     
 					log.error(e.getMessage());
 				}
 				if(c==1) {
 					log.info("accont created");
 				}
 				
-				break;
+				break;                                                
 			}
 		}while(entryChoice!=3);
 	}

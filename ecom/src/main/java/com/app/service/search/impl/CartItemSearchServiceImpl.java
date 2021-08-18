@@ -21,7 +21,7 @@ public class CartItemSearchServiceImpl implements CartItemSearchService {
 			CartItemSearchDAO cartItemSearchDAO = new CartItemSearchDAOImpl();
 			products = cartItemSearchDAO.cartItemSearhService(customer);
 		}else {
-			throw new BusinessException("Business Exception");
+			throw new BusinessException("Invalid Request");
 		}
 		return products;
 	}
