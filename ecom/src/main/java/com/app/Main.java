@@ -25,11 +25,15 @@ import com.app.service.login.EmployeeLoginService;
 import com.app.service.login.impl.CustomerServiceLoginImpl;
 import com.app.service.login.impl.EmployeeLoginServiceImpl;
 import com.app.service.search.CartItemSearchService;
+import com.app.service.search.CustomerSearchService;
 import com.app.service.search.OrderItemSearchService;
 import com.app.service.search.ProductSearchService;
 import com.app.service.search.impl.CartItemSearchServiceImpl;
+import com.app.service.search.impl.CustomerSearchServiceImpl;
 import com.app.service.search.impl.OrderItemSearchServiceImpl;
 import com.app.service.search.impl.ProductSearchServiceImpl;
+import com.app.service.update.OrderStatusUpdateService;
+import com.app.service.update.impl.OrderStatusUpdateServiceImpl;
 
 public class Main {
 	private static Logger log = Logger.getLogger(Main.class);
@@ -79,7 +83,7 @@ public class Main {
 										log.info("4)Search Products");
 										log.info("5)My Profile");
 										log.info("6)Logout");
-										log.info("Enter your choice (1-5)");
+										log.info("Enter your choice (1-6)");
 										try {
 											customerChoice = Integer.parseInt(scanner.nextLine());
 											}catch(NumberFormatException e) {}
@@ -92,15 +96,39 @@ public class Main {
 										    ProductSearchService productSearchService = new ProductSearchServiceImpl();
 										    List<Product> availableProducts = new ArrayList<>();
 										    availableProducts = productSearchService.searchProduct();
+										    int numberofProductsAdded = 0;
 										    if(availableProducts.size()>0) {
 										    	for(Product product: availableProducts) {
 										    		log.info(product.getId() + "            " + product.getName()+"         "+product.getCategory()+"         "+product.getPrice());
 
 										    	}
 										    	log.info("======================================================");
+										    	int addToCartProductId = 0;
+										    	
+										    	do {
+										    	log.info("Enter Product id to add to cart | Enter 0 to go back");
+										        try {
+										        	addToCartProductId = Integer.parseInt(scanner.nextLine());
+										        	
+										        }catch(NumberFormatException e) {}
+										        if(addToCartProductId>0) {
+										        	numberofProductsAdded++;
+										        	log.info(numberofProductsAdded +" item/s selected so far");
+										        }
+										        CreateCartService craeteCartService = new CreateCartServiceImpl();
+										        int index = 1;
+										        
+										        for(Product product: availableProducts) {
+										        	if(index == addToCartProductId) {
+										        		craeteCartService.createCart(product, customer);
+										        	}
+										        	index++;
+										        }
+										    	}while(addToCartProductId!=0);
 										    }else {
 										    	throw new BusinessException("oops something went wrong");
 										    }
+										    log.info(numberofProductsAdded + " product/s added to your cart");
 											break;
 										case 2:
 											
@@ -120,6 +148,31 @@ public class Main {
 											}else {
 												log.info("You don't have any orders");
 											}
+											int updateOrderAsRecieved = 0;
+											
+											do {
+												log.info("1)Update Order Status to Received");
+												log.info("2)Back");
+												try {
+													updateOrderAsRecieved = Integer.parseInt(scanner.nextLine());
+												}catch(NumberFormatException e) {}
+											    switch(updateOrderAsRecieved) {
+											    case 1:
+											    	log.info("Enter Order id");
+											    	int orderId = 0;
+											    	try {
+											    		orderId = Integer.parseInt(scanner.nextLine());
+											    	}catch(NumberFormatException e) {}
+											    	OrderStatusUpdateService orderStatusUpdateService = new OrderStatusUpdateServiceImpl();
+											    	if(orderStatusUpdateService.orderStatusUpdateRecieved(orderId, customer)==1) {
+											    		log.info("Order with " + orderId + "marked as received");
+											    	}else {
+											    		log.info("Can not find order id" + orderId + "in your orders");
+											    	}
+											    	break;
+											    	
+											    }
+											}while(updateOrderAsRecieved!=2);
 											break;
 										case 3:
 											CartItemSearchService cartItemSearchService = new CartItemSearchServiceImpl();
@@ -248,8 +301,9 @@ public class Main {
 								log.info("Welcome Admin " + employee.getFirst_name());
 								do {
 								log.info("1)Add product");
-								log.info("2)Update Order Status");
-								log.info("3)Exit");
+								log.info("2)Update Order Status to Shipped");
+								log.info("3)Search Customer");
+								log.info("4)Logout");
 								try {
 								employeeAction = Integer.parseInt(scanner.nextLine());
 								}catch(NumberFormatException e) {
@@ -259,7 +313,7 @@ public class Main {
 								case 1:
 									log.info("Enter Product Details");
 									log.info("Enter Product Name");
-									String productName = scanner.nextLine(); 
+									String productName = scanner.nextLine();
 									log.info("Enter Category");
 									String productCategory = scanner.nextLine();
 									log.info("Enter Price");
@@ -274,11 +328,118 @@ public class Main {
 									}
 									break;
 								case 2:
-									log.info("Undr con");
+									log.info("Enter the Product ID: ");
+									int updateOrderStatusProductId = 0;
+									//code to service
+									OrderStatusUpdateService orderStatusUpdateService= new OrderStatusUpdateServiceImpl();
+									try {
+										updateOrderStatusProductId = Integer.parseInt(scanner.nextLine());
+									}catch(NumberFormatException e) {}              
+									if(orderStatusUpdateService.orderStatusUpdateShipped(updateOrderStatusProductId)==1) {
+										log.info("Status Update to Shipped with Order id " +updateOrderStatusProductId);
+										
+									}else {
+										log.info("Cannot update the Status");                     
+									}
+									
 									break;
-					
+								case 3:
+									int searchCustomerBy = 0;
+									do {
+									log.info("1)Search Player By Name");
+									log.info("2)Search Player By Email");
+									log.info("3)Search Player By Id");
+									log.info("4)Search Player By Order Id");
+									log.info("5)Back");
+					                try {
+					                	searchCustomerBy = Integer.parseInt(scanner.nextLine());
+					                }catch(NumberFormatException e) {}
+					                switch(searchCustomerBy) {
+					                case 1:
+					                	log.info("Enter Customer Name");
+					                	String customerName = scanner.nextLine();
+				                        //code to service   
+					                	List<Customer> customers = new ArrayList<>();
+					                	CustomerSearchService customerSearchService = new CustomerSearchServiceImpl();
+					                	try {
+					                		customers = customerSearchService.searchCustomerByName(customerName);
+					                	}catch(BusinessException e) {
+					                		log.error(e.getMessage());
+					                	}
+				                        
+					                	if(customers.size()>0) {
+					                		log.info("id     first_name     last_name         email");
+					                		for(Customer foundCustomer : customers) {
+					                			log.info(foundCustomer.getId()+"        "+foundCustomer.getFirst_name()+"          "+foundCustomer.getLast_name()+"        "+foundCustomer.getEmail());
+					                		}
+					                	}else {
+					                		log.info("No customer found with name " +customerName);
+					                	}
+					                	break;
+					                case 2:
+					                	log.info("Enter Cutomer Email");
+					                	String customerEmail = scanner.nextLine();
+					                	Customer foundCustomerByEmail = null;
+					                	customerSearchService = new CustomerSearchServiceImpl();
+					                	try {
+					                	foundCustomerByEmail = customerSearchService.searchCustomerByEmail(customerEmail);
+					                	}catch(BusinessException e) {
+					                		log.error(e.getMessage());
+					                	}
+					                	if(foundCustomerByEmail!=null) {
+					                		log.info("id     first_name     last_name         email");
+					                		log.info(foundCustomerByEmail.getId()+"     "+foundCustomerByEmail.getFirst_name()+"     "+foundCustomerByEmail.getLast_name()+"     "+foundCustomerByEmail.getEmail());
+					                	}else {
+					                		log.info("No customer found with email " +customerEmail);
+					                	}
+					                	break;
+					                case 3:
+					                	log.info("Enter Player Id");
+					                	int customerId = 0;
+					                	try {
+					                		customerId = Integer.parseInt(scanner.nextLine());
+					                	}catch(NumberFormatException e) {
+					                		log.error(e.getMessage());
+					                	}
+					                	customerSearchService = new CustomerSearchServiceImpl();
+					                	Customer foundCustomerById = null;
+					                	try {
+						                	foundCustomerById = customerSearchService.searchCustomerById(customerId);
+						                	}catch(BusinessException e) {}
+						                	if(foundCustomerById!=null) {
+						                		log.info("id     first_name     last_name         email");
+						                		log.info(foundCustomerById.getId() + "     " + foundCustomerById.getFirst_name() + "     " + foundCustomerById.getLast_name() + "       " + foundCustomerById.getEmail());
+						                	}else {
+						                		log.info("No customer found with id " +customerId);
+						                	}
+					                	break;
+					                case 4:
+					                	log.info("Enter Order Id");
+					                	int orderId = 0;
+					                	try {
+					                		orderId = Integer.parseInt(scanner.nextLine());
+					                	}catch(NumberFormatException e) {}
+					                	Customer foundCustomerByOrderId = null;
+					                	customerSearchService = new CustomerSearchServiceImpl();
+					                	try {
+						                	foundCustomerByOrderId = customerSearchService.searchCustomerByOrderId(orderId);
+						                	}catch(BusinessException e) {
+						                		log.error(e.getMessage());
+						                	}
+						                	if(foundCustomerByOrderId!=null) {
+						                		log.info("id     first_name     last_name         email");
+						                		log.info(foundCustomerByOrderId.getId() + "     " + foundCustomerByOrderId.getFirst_name() + "        " + foundCustomerByOrderId.getLast_name()+ "        " + foundCustomerByOrderId.getEmail());
+						                	}else {
+						                		log.info("No customer found with order id " +orderId);
+						                	}
+					                	break;
+					                	
+					                }
+									}while(searchCustomerBy!=5);
+					               
+					                
 								}
-								}while(employeeAction!=3);
+								}while(employeeAction!=4);
 							}
 							
 						
