@@ -17,10 +17,12 @@ public class OrderStatusUpdateDAOImpl implements OrderStatusUpdateDAO {
 		int c =0;
 		try(Connection connection = MySqlConnection.getConnection()){
 			String orderStatusShipped = "Shipped";
-			String sql = "update orders set status=? where id=?";
+			String orderStatusOrdered = "Ordered";
+			String sql = "update orders set status=? where id=? and status=?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, orderStatusShipped);
 			preparedStatement.setInt(2, orderId);
+			preparedStatement.setString(3, orderStatusOrdered);
 			c = preparedStatement.executeUpdate();
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
@@ -35,11 +37,12 @@ public class OrderStatusUpdateDAOImpl implements OrderStatusUpdateDAO {
 		int c = 0;
 		try(Connection connection = MySqlConnection.getConnection()){
 	        String orderStatusReceived = "Received";
-			String sql = "update orders set status=? where id=? and customerid=?";
+	        String orderStatusShipped = "Shipped";
+			String sql = "update orders set status=? where id=? and status=?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, orderStatusReceived);
 			preparedStatement.setInt(2, orderId);
-			preparedStatement.setInt(3, customer.getId());
+			preparedStatement.setString(3, orderStatusShipped);
 			c = preparedStatement.executeUpdate();
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block

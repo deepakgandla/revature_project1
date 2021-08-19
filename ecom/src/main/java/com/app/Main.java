@@ -40,6 +40,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		log.info("Welcome to Deepak's shopping command line app");
+		log.info("===============================================\n");
 		int entryChoice = 0;
 		do {
 			log.info("1)Login");
@@ -75,7 +76,7 @@ public class Main {
 									log.info("================================");
 									log.info("Login Successfull             ||");
 									log.info("Welcome user " + customer.getFirst_name() + "           ||");
-									log.info("================================");
+									log.info("================================\n");
 									do {
 										log.info("1)Shop");
 										log.info("2)My Orders");
@@ -102,7 +103,7 @@ public class Main {
 										    		log.info(product.getId() + "            " + product.getName()+"         "+product.getCategory()+"         "+product.getPrice());
 
 										    	}
-										    	log.info("======================================================");
+										    	log.info("======================================================\n");
 										    	int addToCartProductId = 0;
 										    	
 										    	do {
@@ -167,7 +168,7 @@ public class Main {
 											    	if(orderStatusUpdateService.orderStatusUpdateRecieved(orderId, customer)==1) {
 											    		log.info("Order with " + orderId + "marked as received");
 											    	}else {
-											    		log.info("Can not find order id" + orderId + "in your orders");
+											    		log.info("Can not find order id " + orderId + " in your orders with status shipped");
 											    	}
 											    	break;
 											    	
@@ -219,8 +220,12 @@ public class Main {
 											products =productSearchService.searchProduct(producName);
 											if(products.size()>0) {
 												int index = 1;
+												log.info("====================");
+												log.info("#     name     price");
+												log.info("=====================");
 												for(Product product: products) {
-													log.info(index + ") " + product);
+									
+													log.info(index + ")    " + product.getName() + "    "+product.getPrice());
 												}
 												int addtoCart = 0;
 												do {
@@ -237,7 +242,7 @@ public class Main {
 														log.info("Enter the choice(1-" + products.size() + ")");
 														index = 1;
 														for(Product product: products) {
-															log.info(index + ") " + product);
+															log.info(index + ") " +product.getName());
 														}
 														int addToCartPoductId =0;
 														try {
@@ -273,18 +278,20 @@ public class Main {
 											log.info("Email:    " + customer.getEmail());
 											log.info("======================================================");
 											break;
+								
 										}
 									}while(customerChoice!=6);
 								}else {
 									log.info("Email and password didn't match");
 								}
 							} catch (BusinessException e) {
-								// TODO Auto-generated catch block
+								
 								log.error(e.getMessage());
 							}
 							
-						}while(false);
+						}while(userType!=3);
 						break;
+							
 					case 2:
 						int employeeAction =0;
 						
@@ -298,7 +305,7 @@ public class Main {
 						try {
 							Employee employee = employeeLoginService.employeeLogin(employeeEmail, employeePassword);
 							if(employee.getFirst_name()!=null) {
-								log.info("Welcome Admin " + employee.getFirst_name());
+								log.info("Welcome Admin " + employee.getFirst_name() + "\n");
 								do {
 								log.info("1)Add product");
 								log.info("2)Update Order Status to Shipped");
@@ -372,6 +379,7 @@ public class Main {
 					                		for(Customer foundCustomer : customers) {
 					                			log.info(foundCustomer.getId()+"        "+foundCustomer.getFirst_name()+"          "+foundCustomer.getLast_name()+"        "+foundCustomer.getEmail());
 					                		}
+					                		log.info("\n");
 					                	}else {
 					                		log.info("No customer found with name " +customerName);
 					                	}
@@ -388,7 +396,7 @@ public class Main {
 					                	}
 					                	if(foundCustomerByEmail!=null) {
 					                		log.info("id     first_name     last_name         email");
-					                		log.info(foundCustomerByEmail.getId()+"     "+foundCustomerByEmail.getFirst_name()+"     "+foundCustomerByEmail.getLast_name()+"     "+foundCustomerByEmail.getEmail());
+					                		log.info(foundCustomerByEmail.getId()+"     "+foundCustomerByEmail.getFirst_name()+"     "+foundCustomerByEmail.getLast_name()+"     "+foundCustomerByEmail.getEmail()+"\n");
 					                	}else {
 					                		log.info("No customer found with email " +customerEmail);
 					                	}
@@ -408,7 +416,7 @@ public class Main {
 						                	}catch(BusinessException e) {}
 						                	if(foundCustomerById!=null) {
 						                		log.info("id     first_name     last_name         email");
-						                		log.info(foundCustomerById.getId() + "     " + foundCustomerById.getFirst_name() + "     " + foundCustomerById.getLast_name() + "       " + foundCustomerById.getEmail());
+						                		log.info(foundCustomerById.getId() + "     " + foundCustomerById.getFirst_name() + "     " + foundCustomerById.getLast_name() + "       " + foundCustomerById.getEmail()+"\n");
 						                	}else {
 						                		log.info("No customer found with id " +customerId);
 						                	}
@@ -428,14 +436,15 @@ public class Main {
 						                	}
 						                	if(foundCustomerByOrderId!=null) {
 						                		log.info("id     first_name     last_name         email");
-						                		log.info(foundCustomerByOrderId.getId() + "     " + foundCustomerByOrderId.getFirst_name() + "        " + foundCustomerByOrderId.getLast_name()+ "        " + foundCustomerByOrderId.getEmail());
+						                		log.info(foundCustomerByOrderId.getId() + "     " + foundCustomerByOrderId.getFirst_name() + "        " + foundCustomerByOrderId.getLast_name()+ "        " + foundCustomerByOrderId.getEmail()+"\n");
 						                	}else {
 						                		log.info("No customer found with order id " +orderId);
 						                	}
 					                	break;
+					              
 					                	
 					                }
-									}while(searchCustomerBy!=5);
+									}while(searchCustomerBy!=5);                               
 					               
 					                
 								}
@@ -452,6 +461,9 @@ public class Main {
 						}
 						
 						break;
+						default:
+							log.info("Enter valid number");
+							break;
 					}
 				}while(userType!=3);
 				break;
@@ -479,8 +491,11 @@ public class Main {
 					log.info("accont created");
 				}
 				
-				break;                                                
+				break; 
+             
 			}
+		
 		}while(entryChoice!=3);
+		log.info("Thank You Bye");
 	}
 }
