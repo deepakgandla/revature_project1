@@ -53,9 +53,9 @@ public class Main {
 			case 1:
 				int userType = 0;
 				do {
-					log.info("1)Customer");
+					log.info("\n1)Customer");
 					log.info("2)Employee");
-					log.info("3)Main");
+					log.info("3)Back");
 					try {
 						userType = Integer.parseInt(scanner.nextLine());
 					}catch(NumberFormatException e) {}
@@ -63,7 +63,7 @@ public class Main {
 					case 1:
 						Customer customer = null;
 						do {
-							log.info("welcome to login page");
+							log.info("\nwelcome to login page");
 							log.info("Enter email id");
 							String customerEmail = scanner.nextLine();
 							log.info("Enter Password");
@@ -73,37 +73,37 @@ public class Main {
 								customer = customerLoginService.customerLogin(customerEmail, customerPassword);
 								if(customer.getFirst_name()!=null) {
 									int customerChoice =0;
-									log.info("================================");
+									log.info("\n================================");
 									log.info("Login Successfull             ||");
-									log.info("Welcome user " + customer.getFirst_name() + "           ||");
+									log.info("Welcome user " + customer.getFirst_name() + "         ||");
 									log.info("================================\n");
 									do {
-										log.info("1)Shop");
+										log.info("\n1)Shop");
 										log.info("2)My Orders");
 										log.info("3)My Cart");
 										log.info("4)Search Products");
 										log.info("5)My Profile");
 										log.info("6)Logout");
-										log.info("Enter your choice (1-6)");
+										log.info("Enter your choice (1-6)\n");
 										try {
 											customerChoice = Integer.parseInt(scanner.nextLine());
 											}catch(NumberFormatException e) {}
 										switch(customerChoice) {
 										case 1:
-											log.info("Availabe Products"); 
-											log.info("=====================================================");
-										    log.info("id             Name            Category       price");
-										    log.info("=======================================================");
+											log.info("\nAvailabe Products"); 
+											log.info("=================================================");
+										    log.info("id           Name        Category       price   ||");
+										    log.info("=================================================");
 										    ProductSearchService productSearchService = new ProductSearchServiceImpl();
 										    List<Product> availableProducts = new ArrayList<>();
 										    availableProducts = productSearchService.searchProduct();
 										    int numberofProductsAdded = 0;
 										    if(availableProducts.size()>0) {
 										    	for(Product product: availableProducts) {
-										    		log.info(product.getId() + "            " + product.getName()+"         "+product.getCategory()+"         "+product.getPrice());
+										    		log.info(String.format("%d %14s %15s %10.2f     ||", product.getId(), product.getName(), product.getCategory(), product.getPrice()));
 
 										    	}
-										    	log.info("======================================================\n");
+										    	log.info("=================================================\n");
 										    	int addToCartProductId = 0;
 										    	
 										    	do {
@@ -127,9 +127,9 @@ public class Main {
 										        }
 										    	}while(addToCartProductId!=0);
 										    }else {
-										    	throw new BusinessException("oops something went wrong");
+										    	throw new BusinessException("\noops something went wrong");
 										    }
-										    log.info(numberofProductsAdded + " product/s added to your cart");
+										    log.info(numberofProductsAdded + " \nproduct/s added to your cart");
 											break;
 										case 2:
 											
@@ -137,7 +137,7 @@ public class Main {
 											OrderItemSearchService orderItemSearchService = new OrderItemSearchServiceImpl();
 											orderedItems = orderItemSearchService.orderItemSeach(customer);
 											if(orderedItems.size()>0) {
-												log.info("Orders");
+												log.info("\nOrders");
 												log.info("=======================================================");
 												log.info("||OrderID                 Item                   Status||");
 												log.info("=======================================================");
@@ -147,7 +147,7 @@ public class Main {
 												}
 												log.info("=========================================================");
 											}else {
-												log.info("You don't have any orders");
+												log.info("\nYou don't have any orders");
 											}
 											int updateOrderAsRecieved = 0;
 											
@@ -159,16 +159,16 @@ public class Main {
 												}catch(NumberFormatException e) {}
 											    switch(updateOrderAsRecieved) {
 											    case 1:
-											    	log.info("Enter Order id");
+											    	log.info("\nEnter Order id");
 											    	int orderId = 0;
 											    	try {
 											    		orderId = Integer.parseInt(scanner.nextLine());
 											    	}catch(NumberFormatException e) {}
 											    	OrderStatusUpdateService orderStatusUpdateService = new OrderStatusUpdateServiceImpl();
 											    	if(orderStatusUpdateService.orderStatusUpdateRecieved(orderId, customer)==1) {
-											    		log.info("Order with " + orderId + "marked as received");
+											    		log.info("\nOrder with " + orderId + "marked as received");
 											    	}else {
-											    		log.info("Can not find order id " + orderId + " in your orders with status shipped");
+											    		log.info("\nCan not find order id " + orderId + " in your orders with status shipped");
 											    	}
 											    	break;
 											    	
@@ -180,16 +180,17 @@ public class Main {
 											List<Product> cartItems = cartItemSearchService.cartItemSearhService(customer);
 											float totalCartValue = 0;
 											if(cartItems.size()>=1) {
-												log.info("CART");
-												log.info("============================");
-												log.info("||Name                Price||");
+												log.info("\nCART");
+												log.info("======================");
+												log.info("Name          Price ||");
+												log.info("======================");
 												for(Product product: cartItems) {
 													totalCartValue += product.getPrice();
-													log.info("|| "+product.getName()+"                 " +product.getPrice()+" ||");
+													log.info(String.format("%s %14.2f ||",product.getName(),product.getPrice()));
 												}
 
-												log.info("============================");
-												log.info("                  total: " + totalCartValue);
+												log.info("======================");
+												log.info("             total: " + totalCartValue +"\n");
 												int buyCartItems = 0;
 												do {
 													log.info("1)Make Order");
@@ -199,28 +200,28 @@ public class Main {
 													}catch(NumberFormatException e) {}
 													switch(buyCartItems) {
 													case 1:
-														log.info("Order Items");
+														log.info("\nOrder Items");
 														//Code to Service
 														OrderCreateService orderCreateService = new OrderCreateServiceImpl();
-														int numberOfItemsAddedToCart = orderCreateService.createOrder(customer);
-														log.info("Number of Items Order: " + numberOfItemsAddedToCart);
+														int numberOfItemsAddedToOrders = orderCreateService.createOrder(customer);
+														log.info("Number of Items Ordered: " + numberOfItemsAddedToOrders);
 														break;
 													}
 												}while(buyCartItems!=2);
 											}else {
-												log.info("Your cart is empty");
+												log.info("\nYour cart is empty");
 											}
 			
 											break;
 										case 4:
-											log.info("Enter Product Name");
+											log.info("\nEnter Product Name");
 											String producName = scanner.nextLine();
 											productSearchService = new ProductSearchServiceImpl();
 											List<Product> products = new ArrayList<Product>();
 											products =productSearchService.searchProduct(producName);
 											if(products.size()>0) {
 												int index = 1;
-												log.info("====================");
+												log.info("\n====================");
 												log.info("#     name     price");
 												log.info("=====================");
 												for(Product product: products) {
@@ -229,7 +230,7 @@ public class Main {
 												}
 												int addtoCart = 0;
 												do {
-													log.info("0)Back");
+													log.info("\n0)Back");
 													log.info("1)Add to Cart");
 													try {
 														addtoCart = Integer.parseInt(scanner.nextLine());
@@ -258,21 +259,21 @@ public class Main {
 															}
 														}
 													    if(c==1) {
-													    	log.info("Product added to Cart");
+													    	log.info("\nProduct added to Cart");
 													    }else {
-													    	throw new BusinessException("Something went wrong");
+													    	throw new BusinessException("\nSomething went wrong");
 													    }
 														break;
 													}
 												}while(addtoCart!=0);
 												
 											}else {
-												log.info("No items found");
+												log.info("\nNo items found");
 											}
 											break;
 										case 5:
-											log.info("Profile");
-											log.info("=====================================================");
+											log.info("\nProfile");
+											log.info("\n=====================================================");
 											log.info("ID:    " +customer.getId());
 											log.info("Name:    " + customer.getFirst_name() + " " + customer.getLast_name());
 											log.info("Email:    " + customer.getEmail());
@@ -282,7 +283,7 @@ public class Main {
 										}
 									}while(customerChoice!=6);
 								}else {
-									log.info("Email and password didn't match");
+									log.info("\nEmail and password didn't match");
 								}
 							} catch (BusinessException e) {
 								
@@ -295,7 +296,7 @@ public class Main {
 					case 2:
 						int employeeAction =0;
 						
-						log.info("Welcome to employee login page");
+						log.info("\nWelcome to employee login page");
 						log.info("Enter Email");
 						String employeeEmail = scanner.nextLine();
 						log.info("Enter Password");
@@ -305,12 +306,15 @@ public class Main {
 						try {
 							Employee employee = employeeLoginService.employeeLogin(employeeEmail, employeePassword);
 							if(employee.getFirst_name()!=null) {
-								log.info("Welcome Admin " + employee.getFirst_name() + "\n");
+								log.info("\n==========================");
+								log.info("Login Successful         ||");
+								log.info("Welcome Admin " + employee.getFirst_name() 	+ "     ||");
+								log.info("===========================\n");
 								do {
 								log.info("1)Add product");
 								log.info("2)Update Order Status to Shipped");
 								log.info("3)Search Customer");
-								log.info("4)Logout");
+								log.info("4)Logout\n");
 								try {
 								employeeAction = Integer.parseInt(scanner.nextLine());
 								}catch(NumberFormatException e) {
@@ -331,7 +335,7 @@ public class Main {
 									if(productCreateService.createProduct(product) == 1) {
 										log.info("Product added");
 									}else {
-										throw new BusinessException("Something went wrong");
+										throw new BusinessException("\nSomething went wrong");
 									}
 									break;
 								case 2:
@@ -353,11 +357,11 @@ public class Main {
 								case 3:
 									int searchCustomerBy = 0;
 									do {
-									log.info("1)Search Player By Name");
+									log.info("\n1)Search Player By Name");
 									log.info("2)Search Player By Email");
 									log.info("3)Search Player By Id");
 									log.info("4)Search Player By Order Id");
-									log.info("5)Back");
+									log.info("5)Back\n");     
 					                try {
 					                	searchCustomerBy = Integer.parseInt(scanner.nextLine());
 					                }catch(NumberFormatException e) {}
@@ -402,7 +406,7 @@ public class Main {
 					                	}
 					                	break;
 					                case 3:
-					                	log.info("Enter Player Id");
+					                	log.info("Enter Player Id");              
 					                	int customerId = 0;
 					                	try {
 					                		customerId = Integer.parseInt(scanner.nextLine());
